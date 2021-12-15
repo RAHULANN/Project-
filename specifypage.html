@@ -8,70 +8,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet1.css">
     <script src="https://kit.fontawesome.com/2b1b51c954.js" crossorigin="anonymous"></script>
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
        
-        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap');
-         #top{
-            position: fixed;
-
-          width: 100%;
-            background-color: #1e516c;
-           
-           z-index: 99998;
-           left: 0px;
-           top: 0px;
-
-        }
-        #topboxstyle{
-            line-height: 2em;
-           margin-top: 0px;
-            text-align: center;
-            font-weight: 300;
-            font-family:  Arial, Helvetica, sans-serif;
-            color: white;
-            font-size: 15px;
-            margin: 0 auto;
-            padding: 5px 0px 6px;
-        }
-        #rahulheader{
-            border: 1px solid red;
-            width: 100%;
-            height: 50px;
-           margin-top: 4%;
-           display: flex;
-        }
-        #search{
-            height: 30px;
-            margin-top: 4px;
-            width: 300px;
-        }
-        .material-icons{
-            margin-top: 5px;
-        }
-       #icon{
-           background-color: black;
-           color: white;
-           height: 36px;
-           margin-top: 4px;
-       }
-       #img{
-           margin-left: 200px;
-       }
-       #accounticon{
-           height: 30px;
-          
+       
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
         
-    margin-left: 500px;           
-           
-           
-       }
-       #account{
-           margin-top: 3px;
-       }
-       #accounticon:hover{
-           background-color: green;
-       }
        .rahulshoes{
            height:600px ;
            width: 100%;
@@ -91,17 +33,93 @@
        }
 #shoesh1{
     font-family: 'Lato', sans-serif;
-     font-size: 22px;
-    font-weight: bold;
-    word-break: break-all;
-    color: rgb(70, 69, 69);
+     font-size: 25px;
+     font-weight: 800;
+    word-break: break-word;
+    color:rgb(0, 0, 0);
+    clear: both;
+    margin: 0 0 0.75em;
+    margin-top: 4px;
+
     
 }
+#price{
+    margin-top: 6%;
+}
+
+#rupe{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+#pricetext{
+    font-size: 20px;
+    margin-left: 5px;
+}
+#guarantee{
+ margin: 10px auto 0px auto;
+ text-align: center;
+ 
+ width: 100%;
+ border: 1px solid red;
+ 
+}
+#supporticon{
+    display: grid;
+    height: 100px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px;
+    grid-template-areas:
+    "box1 box2 box3 box4";
+    grid-gap: 10px;
+}
+#supporticon:nth-child(1){
+    grid-area: box1;
+    border: 1px solid red;
+    text-align: center;
+    margin: auto;
+}
+#supporticon:nth-child(2){
+    grid-area: box2;
+    border: 1px solid red;
+}
+#supporticon:nth-child(3){
+    grid-area: box3;
+    border: 1px solid red;
+   
+}
+#supporticon:nth-child(4){
+    grid-area: box4;
+    border: 1px solid red;
+   
+}
+
+#supporticon h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 6px;
+    text-align: center;
+}
+#pasize{
+    height: 60px;
+    font-size: 19px;
+    font-weight: 600;
+}
+#sizebox{
+    height: 35px;
+    width: 170px;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+
+
     </style>
 </head>
 <body>
+   <div id="rahultop"><p id="topOfferBar">FOR ONLINE PAYMENT EXTRA $50 DISCOUNT ON ORDERS ABOVE $500</p></div> 
     <div id="container">
-        <p id="topOfferBar">FOR ONLINE PAYMENT EXTRA $50 DISCOUNT ON ORDERS ABOVE $500</p>
+       
         <div id="navBar1">
             <div id="searchBox">
                 <input id="searchBar" type="text" placeholder="Search here..."/>
@@ -119,8 +137,8 @@
             <div id="check"></div>
         </div>
         <div id="sectionNameBox">
-            <h1 id="myAccount">My account</h1>
-            <p id="home">Home <span id="Gap"> ></span><span id="myAccountGap"> My account</span></p>
+            <h1 id="myAccount">WOODLAND MEN'S CASUAL/PARTY SHOES IN THA COLOUR</h1>
+            <p id="home">Home <span id="Gap"> ></span><span id="myAccountGap"> Products</span><span id="Gap"> ></span><span id="myAccountGap"> Foot Wear</span><span id="Gap"> ></span><span id="myAccountGap">Men,s footwear</span><span id="Gap"> ></span><span id="myAccountGap">Casual/party shoes</span><span id="Gap"> ></span><span id="myAccountGap"> WOODLAND MAN'S CASUAL/PARTY SHOES IN TAN COLOUR</span></p>
         </div>
         <div></div>
         
@@ -128,7 +146,45 @@
       <div class="rahulshoes">
           <div id="shoesimg"></div>
           <div id="shoesdis">
-              <h2 id="shoesh1">WOODLAND MAN'S CASUAL/PARTY SHOES IN TAN COLOUR</h2>
+              <p id="shoesh1">WOODLAND MAN'S CASUAL/PARTY SHOES IN TAN COLOUR</p>
+              <div id="price"><span id="rupe">₹3,695.00</span><span id="pricetext">(Inclusive of all taxes)</span></div>
+              <div id="guarantee">
+                  <img src="https://www.uboric.com/wp-content/uploads/2020/12/guarantee.svg" alt="100%guarantee" width="120px">
+              </div>
+              <div id="supporticon">
+                  <div>
+                      <i class="fa fa-money" class="fouricons" style="font-size: 32px ;font-weight: 400;color: #1e516c; text-align: center;margin-left: 45px;"></i> 
+                      <h4>7 day Return</h4>
+                      
+                      
+                </div>
+                  <div>
+                    <i class="fa fa-headphones" class="fouricons" style="font-size: 32px ;font-weight: 400;color: #1e516c; text-align: center;margin-left: 45px;"></i> 
+                    <h4>7 day Return</h4>
+                  </div>
+                  <div><i class="fa fa-shopping-bag" class="fouricons" style="font-size: 32px ;font-weight: 400;color: #1e516c; text-align: center;margin-left: 45px;"></i> 
+                    <h4>7 day Return</h4></div>
+                  <div> <i   class="fa fa-credit-card"  class="fouricons" style="font-size: 32px ;font-weight: 400;color: #1e516c; text-align: center;margin-left: 45px;"></i> 
+                    <h4>7 day Return</h4></div>
+
+              </div>
+              <table>
+                  <tbody>
+                      <tr>
+                          <td> <label id="pasize">Size:</label></td>
+                               <td>
+                                   <select name="size" id="sizebox">
+                                       <option value="--">Choose an option </option>
+                                       <option value="40">40</option>
+                                       <option value="41">41</option>
+                                       <option value="42">42</option>
+                                       <option value="43">43</option>
+                                       <option value="44">44</option>
+                                   </select>
+                               </td>
+                      </tr>
+                  </tbody>
+              </table>
           </div>
       </div>
       

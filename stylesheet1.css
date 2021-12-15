@@ -16,6 +16,7 @@
             width: 100%;
             margin:0px auto;
             position: fixed;
+        
            
         }
         #navBar1{
@@ -89,8 +90,8 @@
         }
         #sectionNameBox{
             border: 1px solid green;
-            width: 60%;
-            height: 100px;
+            width: 80%;
+            height: 150px;
             margin: auto;
 
         }
@@ -122,5 +123,6 @@
 #rahultop{
     margin-bottom: 4px;
     height: 40px;
+    border: 0px hidden;
 }
  
