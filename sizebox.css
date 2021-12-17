@@ -1,0 +1,63 @@
+#descriptionsize{
+    height: 540px;
+    width: 50%;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+}
+#rahulsizebox{
+    width: 50%;
+    height: 540px;
+    display: flex;
+   margin: 2% auto auto auto;
+   padding: 5px;
+}
+.button-box{
+    width: 250px;
+    height: 30px;
+    margin: auto auto auto auto;
+    position: relative;
+    border: 2px solid red;
+}
+.toggle-btn{
+    border: transparent;
+    background-color: white;
+    border: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    position: relative;
+
+   
+}
+.toggle-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+#dis{
+    transition: .5s;
+   
+    height: 400px;
+    width: 500px;
+  border: 1px solid red;
+   
+}
+#dis>span{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+   line-height: 30px;
+}
+#dissize{
+    height: 500px;
+    width: 400px;
+  margin: auto;
+    border: 1px solid red;
+}
+#pri{
+    display: flex;
+    
+}
+
+    

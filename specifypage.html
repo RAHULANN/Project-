@@ -9,13 +9,21 @@
     <link rel="stylesheet" href="stylesheet1.css">
     <script src="https://kit.fontawesome.com/2b1b51c954.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="imgstyle.css" />
+    <link rel="stylesheet" href="sizebox.css">
+    
+<script src="jquery.js"></script>
+<script src="zoom.js"></script>
+<script src="script.js"></script>
+
     <style>
        
        
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
         
        .rahulshoes{
-           height:600px ;
+           margin-top: 20px;
+           height:1330px ;  
            width: 100%;
            border: 1px solid red;
            display:grid;
@@ -23,13 +31,14 @@
        }
        #shoesimg{
          
-           height: 100%;
+          
            border: 1px solid red;
        }
        #shoesdis{
          
            height: 100%;
            border: 1px solid red;
+          
        }
 #shoesh1{
     font-family: 'Lato', sans-serif;
@@ -99,6 +108,8 @@
     font-weight: 400;
     margin: 6px;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
 }
 #pasize{
     height: 60px;
@@ -111,6 +122,295 @@
     font-size: 17px;
     font-weight: 500;
     
+}
+#buycart{
+   
+display: grid;
+margin-top: 5px;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: 60px;
+padding: 10px;
+grid-template-areas: 
+"cart1 cart2 cart3 cart3";
+grid-gap: 2px;
+border: 1px solid red;
+}
+#buycart>:nth-child(1){
+    grid-area:cart1;
+  
+   text-align: center;
+ 
+  
+
+}
+#buycart>:nth-child(2){
+    grid-area:cart2;
+  
+
+}
+#buycart>:nth-child(3){
+    grid-area:cart3;
+  
+    text-align: center;
+  
+   
+}
+#butt1:hover{
+    background-color: white;
+    cursor: no-drop;
+}
+#butt1{
+    height:50px;
+    width: 150px;
+    font-size: 14px;
+    background-color: #ffce61;
+    margin: 15px 10px 0px 0px;
+    padding: 14px 20px;
+    font-family: lato,sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2PX SOLID black;
+    
+}
+
+#input1{
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: transparent;
+    text-align: center;
+    padding: 8px 0px;
+    margin-top: 6%;
+
+
+
+
+    
+
+}
+#butt3{
+height: 50px;
+width: 300px;
+background-color:#ffce61;
+font-size: 14px;
+font-size: lato,sans-serif;
+margin: 15px 0px;
+padding: 14px;
+color: #222222;
+font-weight: 500;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+text-align: center;
+border: 2PX SOLID black;
+}
+#butt3:hover{
+    background-color: white;
+    cursor: no-drop;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+    opacity: 1;
+
+}
+#enquirybox{
+height: 50px;
+width: 80%;
+margin: auto;
+text-align: center;
+margin-top: 50px;
+}
+#enquirybutt{
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color:
+#ffce61;
+border: 2px solid black;
+}
+#enquirybutt:hover{
+
+background-color: white;
+cursor:pointer;
+}
+#colourfulltext{
+    border: 1px solid red;
+    height: 460px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 14PX 0PX 10PX 14px;
+}
+#preorder{
+    background: -webkit-linear-gradient(
+45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab 80%);
+    background-image: -webkit-linear-gradient(
+45deg, rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171) 80%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-color: initial;
+    background-clip: border-box;
+    background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+}
+   
+
+li{
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 34px;
+ 
+   
+}
+#odd{
+    margin-left: -1px;
+  
+}
+#newodd{
+margin-top: 45px;
+}
+#skuholl{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: rgb(155, 155, 155);
+  
+    padding: 14PX 0PX 10PX 40px;
+    line-height: 30px;
+}
+#sku{
+   color: black; 
+   font-weight: 800;
+}
+#icons{
+    height: 100px;
+    width: 400px;
+    border: 1px solid green;
+    margin: 15px 0px 0px 40px;
+    display: flex;
+    margin-left: 10px;
+    padding:14PX 0PX 10PX 30px ;
+   
+}
+#icons>div{
+    margin-left: 10px;
+  
+}
+#icons button{
+    height: 40px;
+    border: transparent;
+
+
+}
+#icons button:hover{
+    cursor: pointer;
+    zoom: 90%;
+}
+
+#relatedproducts{
+    border: 1px solid rgb(255, 38, 0);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 50px 340px;
+    grid-template-areas:
+          "a a a a"
+          "b c d e";
+    grid-gap: 20px;
+    padding: 0px 20px 20px 20px;
+}
+#relatedproducts>:nth-child(1){
+    grid-area:a;
+    border: 1px sold green;
+    background-color: yellowgreen;
+    margin: 0px 0px 79.2px;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #313131;
+}
+#relatedproducts>:nth-child(2){
+    grid-area:b;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color:#222222;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    
+}
+#relatedproducts>:nth-child(3){
+    grid-area:c;
+   
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color:#222222;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+#relatedproducts>:nth-child(4){
+    grid-area:d;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color:#222222;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+#relatedproducts>:nth-child(5){
+    grid-area:e;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    color:#222222;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    
+}
+#relatedproducts>div>span{
+    color: rgb(3, 3, 3);
+    font-weight: 500;
+}
+#rate{
+    font-size: 23px;
+    font-weight: 600;
+    color:#222222;
+}
+
+#relatedproducts>div>p:hover{
+    zoom: 93%;
+    text-decoration: underline;
+    cursor: pointer;
+
+
+
+}
+#relatedproducts>div>img:hover{
+    zoom: 93%;
+    
+    cursor: pointer;
+
+
+
+}
+#footer{
+    height: 500px;
+    width: 100%;
 }
 
 
@@ -144,7 +444,52 @@
         
     </div>
       <div class="rahulshoes">
-          <div id="shoesimg"></div>
+          <div id="shoesimg">
+           
+               
+
+
+
+            <div class="container">
+                <div class="xzoom-container">
+                    <img id="img1"src="https://www.uboric.com/wp-content/uploads/2021/01/61TVtYrdd2L._UL1500_-Copy.png"  class="xzoom" xoriginal="https://www.uboric.com/wp-content/uploads/2021/01/61TVtYrdd2L._UL1500_-Copy.png">
+                    <div class="xzoom-thumbs">
+                        <a href="https://www.uboric.com/wp-content/uploads/2021/01/61TVtYrdd2L._UL1500_-Copy.png">
+                         <img class="xzoom-gallery" src="./images/1.min.png">
+                       </a>
+                         <a href="https://www.uboric.com/wp-content/uploads/2021/01/71QhNy9CkiL._UL1500_.png">
+                           <img class="xzoom-gallery" src="./images/resize-16396369271645625283pgn1.png" >
+                       </a>
+                           <a href="https://www.uboric.com/wp-content/uploads/2021/01/71QhNy9CkiL._UL1500_.png">
+                               <img class="xzoom-gallery" src="./images/3.min.png" >
+                           </a>
+                               <a href=" https://www.uboric.com/wp-content/uploads/2021/01/71fBq4eiTaL._UL1500_-Copy.png" height="900px" width="800px">
+                                   <img class="xzoom-gallery" src="./images/4.min.png" height="900px" width="800px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
           <div id="shoesdis">
               <p id="shoesh1">WOODLAND MAN'S CASUAL/PARTY SHOES IN TAN COLOUR</p>
               <div id="price"><span id="rupe">₹3,695.00</span><span id="pricetext">(Inclusive of all taxes)</span></div>
@@ -160,12 +505,12 @@
                 </div>
                   <div>
                     <i class="fa fa-headphones" class="fouricons" style="font-size: 32px ;font-weight: 400;color: #1e516c; text-align: center;margin-left: 45px;"></i> 
-                    <h4>7 day Return</h4>
+                    <h4>24/7 Online Support</h4>
                   </div>
                   <div><i class="fa fa-shopping-bag" class="fouricons" style="font-size: 32px ;font-weight: 400;color: #1e516c; text-align: center;margin-left: 45px;"></i> 
-                    <h4>7 day Return</h4></div>
+                    <h4>Fast Delivery in India</h4></div>
                   <div> <i   class="fa fa-credit-card"  class="fouricons" style="font-size: 32px ;font-weight: 400;color: #1e516c; text-align: center;margin-left: 45px;"></i> 
-                    <h4>7 day Return</h4></div>
+                    <h4>Secure Payment</h4></div>
 
               </div>
               <table>
@@ -185,8 +530,128 @@
                       </tr>
                   </tbody>
               </table>
+              <div id="buycart">
+                  <div>
+                       <button id="butt1"  > <input type="hidden">BUY NOW</button>  </div>   
+                  <div>
+                      <input type="number" id="input1" value="1" min="1" max="999" >
+                  </div>
+                  <div ><button id="butt3">ADD TO CART</button> </div>
+
+              </div>
+              <div id="enquirybox">
+                  <button id="enquirybutt">SEND ENQUIRY</button>
+              </div>
+              <div id="colourfulltext">
+                <ul>
+                    <li><span id="preorder" > <i class="fas fa-crown" id="odd"></i> Guaranteed delivery with 100% original Products </span></li>
+                    <li> <span> <span id="preorder">COD available</span> on some categories </span></li>
+                    
+                    <li><span>FOR ONLINE PAYMENT<span id="preorder"> EXTRA ₹100 DISCOUNR</span> ON ORDERS <span id="preorder"> ABOVE ₹500</span></span></li>
+                    <li><span> <span id="preorder">EMI</span>OPTION AVAILABLE </span></li>
+                    <li> <span> <span id="preorder">FREE SHIPPING</span> ON PREPAID ORDERS & ALSO GET EXTRA <span id="preorder"> ₹69 DISCOUNT</span>ON <span id="preorder"> PREPAID ORDERS</span>ABOVE<span id="preorder"> ₹500</span></span></li>
+                    <li id="newodd"> <span> <span id="preorder">FREE SHIPPING</span> ABOVE<span id="preorder">₹500</span> ON <span id="preorder">PREPAID</span>AND<span id="preorder">COD</span> ORDERS</span></li>
+                    <li> <span>BELOW ₹500 <span id="preorder">CASE ON DELIVERY </span>CHARGES<span id="preorder">₹49</span></span></li>
+                    <li> <span> YOU WILL RECEIVE PRODUCTS IN NEXT <span id="preorder"> 5  TO 7 DAYS </span> ALL OVER <span id="preorder">INDIA </span> </span></li>
+                    <li> <span> RETURN AVAILABLE ON <span id="preorder"> WRONG </span> OR <span id="preorder"> DAMAGED </span> PRODUCT DELIVERED,READ <span id="preorder"> RETURN PLOICY </span> TO KNOW MORE.</span></li>
+                </ul>
+               
+                 </div>
+               <span id="skuholl"> <span id="sku"> SKU:</span> WOOD66 </span>
+               <br>
+               <span id="skuholl"> <span id="sku"> Categories:</span> Casual/Party shoes,Foot Wear,Men's footwear </span>
+               <div id="icons">
+                   <div>
+                   <button> <i class="fab fa-facebook-square" style="font-size:45px;color:blue"></i></button>
+                   </div>
+                   <div>
+                   <button><i class="fa fa-whatsapp-square" style="font-size:45px;color:green"></i></button> 
+                   </div>
+                   <div> 
+                    <button><i class="fa fa-twitter-square" style="font-size:45px;color:#23a6d5"></i></i></button> 
+                   </div>
+                   <div>
+                    <button><i class="fa fa-envelope-square" aria-hidden="true" style="font-size: 45px; color: #7a0505;"></i></button> 
+                   </div>
+                   <div>
+                       <button><i class="fa fa-skype" style="font-size:45px;color:#23a6d5"></i></button>
+                   </div>
+                   <div>
+                       <button><i class="fa fa-telegram" style="font-size:45px;color:#23a6d5"></i></button>
+                   </div>
+               </div>
+            
+            </div>
+              
           </div>
-      </div>
+
+          <div id="descriptionsize">
+           
+                <div class="rahulsizebox">
+                    <div class="button-box" > 
+                        <button class="toggle-btn">DESCRIPTION</button>
+                        <button class="toggle-btn">SIZE_CHART</button>
+                    </div>
+                    <div id="pri">
+                 <div id="dis">
+                    <span>WOODLAND MEN’S CASUAL PARTY  SHOES – 2657117</span>
+                    <br>
+                    <span>MATERIAL = LEATHER</span>
+                    <br>
+                    <span>SOLE = RUBBER/PU/TPR</span>
+                    <br>
+                    <span>COLOUR = TAN</span>
+                    <br>
+                    <span>CLOUSER = LACE UP</span>
+                    <br>
+                    <span>SIZE = 6,7,8,9,10</span>
+                </div>
+                <div id="dissize">
+                    <span>WOODLAND MEN’S CASUAL PARTY  SHOES – 2657117</span>
+                    <br>
+                    <span>MATERIAL = LEATHER</span>
+                    <br>
+                    <span>SOLE = RUBBER/PU/TPR</span>
+                    <br>
+                    <span>COLOUR = TAN</span>
+                    <br>
+                    <span>CLOUSER = LACE UP</span>
+                    <br>
+                    <span>SIZE = 6,7,8,9,10</span>
+                </div>
+            </div>
+                </div>
+
+
+          </div>
+          
+          <div id="relatedproducts">
+              <span>Related products</span>
+              <div> 
+                  <img src="https://www.uboric.com/wp-content/uploads/2019/11/DSC_0094_result.jpg" height="200px" width="312px">
+                  <p>G.SERIES MEN'S LOAFER in BROWN</p>
+                  <SPan> <SPan id="rate">₹449.00 </SPan> (Inclusive of all taxes) </SPan>
+              </div>
+              <div> 
+                <img src="https://www.uboric.com/wp-content/uploads/2019/11/DSC_0122_result-4.jpg" height="200px" width="312px">
+                <p>TRY IT MEN'S LOAFER in BROWN</p>
+                <SPan> <SPan id="rate">₹999.00 </SPan> (Inclusive of all taxes) </SPan>
+            </div>
+            <div> 
+                <img src="https://www.uboric.com/wp-content/uploads/2019/11/DSC_0267_result.jpg" height="200px" width="312px">
+                <p>G.SERIES MEN’S CASUAL/PARTY WEAR in BROWN</p>
+                <SPan> <SPan id="rate">₹1200.00 </SPan> (Inclusive of all taxes) </SPan>
+            </div>
+            <div> 
+                <img src="https://www.uboric.com/wp-content/uploads/2019/11/DSC_0028_result-2.jpg" height="200px" width="312px">
+                <p>WOODLAND MEN’S CASUAL SHOES in CAMEL</p>
+                <SPan> <SPan id="rate">₹3895.00 </SPan> (Inclusive of all taxes) </SPan>
+            </div>
+          </div>
+       
+
+
+          <div id="footer"></div>
       
       
 </body>
