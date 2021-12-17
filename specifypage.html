@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
+ 
+    <link rel="stylesheet" href="rahulhome.css">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet1.css">
     <script src="https://kit.fontawesome.com/2b1b51c954.js" crossorigin="anonymous"></script>
@@ -310,6 +315,7 @@ margin-top: 45px;
 #icons button{
     height: 40px;
     border: transparent;
+    background-color: white;
 
 
 }
@@ -322,7 +328,7 @@ margin-top: 45px;
     border: 1px solid rgb(255, 38, 0);
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 50px 340px;
+    grid-template-rows: 60px 340px;
     grid-template-areas:
           "a a a a"
           "b c d e";
@@ -408,10 +414,7 @@ margin-top: 45px;
 
 
 }
-#footer{
-    height: 500px;
-    width: 100%;
-}
+
 
 
     </style>
@@ -589,10 +592,16 @@ margin-top: 45px;
            
                 <div class="rahulsizebox">
                     <div class="button-box" > 
-                        <button class="toggle-btn">DESCRIPTION</button>
-                        <button class="toggle-btn">SIZE_CHART</button>
+                        <div id="btn"></div>
+                        <button  class="toggle-btn" id="bt1" onclick="DESCRIPTION()">DESCRIPTION</button>
+                        <button class="toggle-btn" id="bt2" onclick="SIZE_CHART()">SIZE_CHART</button>
                     </div>
-                    <div id="pri">
+
+
+
+       
+                
+                   <div id="pri">
                  <div id="dis">
                     <span>WOODLAND MEN’S CASUAL PARTY  SHOES – 2657117</span>
                     <br>
@@ -605,23 +614,77 @@ margin-top: 45px;
                     <span>CLOUSER = LACE UP</span>
                     <br>
                     <span>SIZE = 6,7,8,9,10</span>
-                </div>
+                 </div>
                 <div id="dissize">
-                    <span>WOODLAND MEN’S CASUAL PARTY  SHOES – 2657117</span>
-                    <br>
-                    <span>MATERIAL = LEATHER</span>
-                    <br>
-                    <span>SOLE = RUBBER/PU/TPR</span>
-                    <br>
-                    <span>COLOUR = TAN</span>
-                    <br>
-                    <span>CLOUSER = LACE UP</span>
-                    <br>
-                    <span>SIZE = 6,7,8,9,10</span>
+                     <h3>Size Chart</h3>
+                     
+                     <p>How to measure</p>
+                 
+                        
+                     <table id="customers">
+                        <tr>
+                          <th>Uk</th>
+                          <th>US</th>
+                          <th>EURO</th>
+                          <th>TO Fit Foot Length(cm)</th>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>5.5</td>
+                          <td>38.5</td>
+                          <td>23.5</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>6.5</td>
+                          <td>39.5</td>
+                          <td>24.5</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>7.5</td>
+                          <td>40.5</td>
+                          <td>25.5</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>8.5</td>
+                          <td>42</td>
+                          <td>26.5</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>9.5</td>
+                          <td>43</td>
+                          <td>27.5</td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>10.5</td>
+                          <td>44.5</td>
+                          <td>28.5</td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>11.5</td>
+                          <td>46</td>
+                          <td>29.5</td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>12.5</td>
+                          <td>47.5</td>
+                          <td>30.5</td>
+                        </tr>
+                       
+                      </table>
+                      
+
+
                 </div>
             </div>
+            
                 </div>
-
 
           </div>
           
@@ -650,9 +713,95 @@ margin-top: 45px;
           </div>
        
 
+          <div id="Zreview">
+            <div id="head">
+                <h1>What Our Customer Says</h1>
+            </div>
+            <div id="z1">
+                <p>Premium Quality Footwear Products.Fast Delivery,Hassle Free Return Process, Wide range compare to other stores and websites.Highly Recommend Uboric for your all kind of Footwear Needs</p>
+                <p>Sanket Anadani</p>
+            </div>
+            <div id="z2">
+                <p>Auspicious range of foot wares.Premium branded products.Good service and delivery duration.Super high value of customer.</p>
+                <p>Tushar Pandya</p>
+            </div>
+            <div id="z3">
+                <p>I think one of the best app for the shoes shopping. i  totally happy with it. Thank you so much uboric</p>
+                <p>harpal patel</p>
+            </div>
+            <div id="bottom">
+                <button id="revbtn">Add Your Review</button>
+            </div>
+        </div>
+        <div id="Zfooter">
+            <img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" id="googlePlay">
+            
 
-          <div id="footer"></div>
+            <!--Navigation-->
+            <div id="Znav">
+                <a href="aboutUs.html" id="aboutUs">About Us</a>
+                <a href="contact.html" id="contact">Contact</a>
+                <a href="shipping.html" id="return">Shipping & Returns</a>
+                <a href="account.html" id="account">My Account</a>
+                <a href="policy.html" id="policy">Privacy Policy</a>
+                <a href="seller.html" id="seller">Become A Seller</a>
+                <a href="condition.html" id="term">Terms & Conditions</a>
+
+                <p id="para"><i class="far fa-copyright"></i> 2019-2021 UBORIC.ALL RIGHTS RESERVED.</p>
+
+                <div id="Zicon">
+                    <div class="social">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="social">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
       
-      
+       
 </body>
 </html>
+<script>
+    var x=document.getElementById("dis");
+    var y=document.getElementById("dissize");
+    var z=document.getElementById("btn");
+   var e=document.getElementById("bt1");
+   var d=document.getElementById("bt2");
+   var p=document.getElementById("descriptionsize");
+    function DESCRIPTION(){
+        x.style.marginLeft="50px"
+        y.style.marginLeft="1010px"
+        e.style.textDecoration="Underline";
+        d.style.textDecoration="";
+        p.style.height="400px"
+     
+    }
+    function SIZE_CHART() {
+     y.style.marginRight="-4500px"
+     x.style.marginLeft="-1350px"
+     e.style.textDecoration="";
+     d.style.textDecoration="Underline";  
+     p.style.height="700px" 
+
+        
+    }
+
+
+</script>

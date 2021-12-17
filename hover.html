@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sizebox.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="descriptionsize">
+           
+        <div class="rahulsizebox">
+            <div class="button-box" > 
+                <div id="btn"></div>
+                <button  class="toggle-btn" onclick="DESCRIPTION()">DESCRIPTION</button>
+                <button class="toggle-btn" onclick="SIZE_CHART()">SIZE_CHART</button>
+            </div>
+
+
+
+
+        
+           <div id="pri">
+         <div id="dis">
+            <span>WOODLAND MEN’S CASUAL PARTY  SHOES – 2657117</span>
+            <br>
+            <span>MATERIAL = LEATHER</span>
+            <br>
+            <span>SOLE = RUBBER/PU/TPR</span>
+            <br>
+            <span>COLOUR = TAN</span>
+            <br>
+            <span>CLOUSER = LACE UP</span>
+            <br>
+            <span>SIZE = 6,7,8,9,10</span>
+         </div>
+        <div id="dissize">
+            <span>WOODLAND MEN’S CASUAL PARTY  SHOES – 2657117</span>
+            <br>
+            <span>MATERIAL = LEATHER</span>
+            <br>
+            <span>SOLE = RUBBER/PU/TPR</span>
+            <br>
+            <span>COLOUR = TAN</span>
+            <br>
+            <span>CLOUSER = LACE UP</span>
+            <br>
+            <span>SIZE = 6,7,8,9,10</span>
+        </div>
+    </div>
+    
+        </div>
+
+  </div>
+</body>
+</html>
+<script>
+    var x=document.getElementById("dis");
+    var y=document.getElementById("dissize");
+    var z=document.getElementById("btn");
+   
+    function DESCRIPTION(){
+        x.style.left="50px"
+        y.style.left="50px"
+        z.style.left="100px"; 
+        console.log("hiii")
+    }
+    function SIZE_CHART() {
+        x.style.left="-1000px";
+        y.style.left="450px"
+        z.style.left="50px"
+        
+    }
