@@ -209,7 +209,7 @@ border: 2PX SOLID black;
 }
 #butt3:hover{
     background-color: white;
-    cursor: no-drop;
+   
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button {  
@@ -434,6 +434,13 @@ margin-top: 45px;
             <div id="accountCartBox">
                 <i id="accountLogo" class="fas fa-user-circle"></i>
                 <i class="fas fa-cart-plus"></i>
+               <p id="cartsum"> </p>
+
+
+
+
+
+               <!-- hie this is your web -->
             </div>
         </div>
         <div id="navBar">
@@ -537,9 +544,29 @@ margin-top: 45px;
                   <div>
                        <button id="butt1"  > <input type="hidden">BUY NOW</button>  </div>   
                   <div>
-                      <input type="number" id="input1" value="1" min="1" max="999" >
+                      <input type="number" id="input1" value="1"  min="1" max="999" >
                   </div>
-                  <div ><button id="butt3">ADD TO CART</button> </div>
+                  <div ><button id="butt3" >ADD TO CART</button> </div>
+
+<script>
+     
+     var total="";
+    var sum=document.getElementById("input1").value;
+  
+    var pp=document.getElementById("cartsum");
+    var g=document.getElementById("butt3").addEventListener("click",addcart())
+    
+    function addcart(event){
+      total=total+sum
+        pp.textContent=total;
+    }
+   
+    console.log(sum)
+</script>
+
+
+
+
 
               </div>
               <div id="enquirybox">
