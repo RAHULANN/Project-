@@ -1,7 +1,7 @@
 $(function(){
     $(".xzoom,.xzoom-gallery").xzoom({
-        zoomWidth:500,
-        tint:"#333",
+        zoomWidth:400,
+        tint:"#33",
         Xoffset:15,
     });
 });
