@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel = "icon" href = "titlelogo1.png" sizes="any" type = "image/x-icon"  >
     <script src="https://kit.fontawesome.com/683b4b40e3.js" crossorigin="anonymous"></script>
  
     <link rel="stylesheet" href="rahulhome.css">
@@ -30,19 +30,19 @@
            margin-top: 20px;
            height:1330px ;  
            width: 100%;
-           border: 1px solid red;
+         margin-top: 100px;
            display:grid;
            grid-template-columns: repeat(2,1fr);
        }
        #shoesimg{
          
           
-           border: 1px solid red;
+          
        }
        #shoesdis{
          
            height: 100%;
-           border: 1px solid red;
+          
           
        }
 #shoesh1{
@@ -75,7 +75,7 @@
  text-align: center;
  
  width: 100%;
- border: 1px solid red;
+ border: 1px solid transparent;
  
 }
 #supporticon{
@@ -89,22 +89,22 @@
 }
 #supporticon:nth-child(1){
     grid-area: box1;
-    border: 1px solid red;
+    border: 1px solid transparent;
     text-align: center;
     margin: auto;
 }
 #supporticon:nth-child(2){
     grid-area: box2;
-    border: 1px solid red;
+    border: 1px solid transparent;
 }
 #supporticon:nth-child(3){
     grid-area: box3;
-    border: 1px solid red;
+    border: 1px solid transparent;
    
 }
 #supporticon:nth-child(4){
     grid-area: box4;
-    border: 1px solid red;
+    border: 1px solid transparent;
    
 }
 
@@ -120,13 +120,21 @@
     height: 60px;
     font-size: 19px;
     font-weight: 600;
+    margin-left: 0px;
+   
 }
 #sizebox{
     height: 35px;
     width: 170px;
     font-size: 17px;
     font-weight: 500;
-    
+    margin-left: 0px;
+    border: 1px solid;
+   
+}
+table{
+   
+    width: 40px;
 }
 #buycart{
    
@@ -138,7 +146,7 @@ padding: 10px;
 grid-template-areas: 
 "cart1 cart2 cart3 cart3";
 grid-gap: 2px;
-border: 1px solid red;
+border: 1px solid white;
 }
 #buycart>:nth-child(1){
     grid-area:cart1;
@@ -179,13 +187,13 @@ border: 1px solid red;
 
 #input1{
     width: 100px;
-    height: 35px;
+    height: 45px;
     font-size: 16px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border: transparent;
     text-align: center;
     padding: 8px 0px;
-    margin-top: 6%;
+    margin-top: 10%;
 
 
 
@@ -239,7 +247,7 @@ background-color: white;
 cursor:pointer;
 }
 #colourfulltext{
-    border: 1px solid red;
+   
     height: 460px;
     width: 100%;
     margin-top: 30px;
@@ -301,7 +309,7 @@ margin-top: 45px;
 #icons{
     height: 100px;
     width: 400px;
-    border: 1px solid green;
+   
     margin: 15px 0px 0px 40px;
     display: flex;
     margin-left: 10px;
@@ -325,7 +333,7 @@ margin-top: 45px;
 }
 
 #relatedproducts{
-    border: 1px solid rgb(255, 38, 0);
+   
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 60px 340px;
@@ -426,9 +434,77 @@ margin-top: 45px;
     </style>
 </head>
 <body>
-   <div id="rahultop"><p id="topOfferBar">FOR ONLINE PAYMENT EXTRA $50 DISCOUNT ON ORDERS ABOVE $500</p></div> 
+   <div id="rahultop"><p id="topOfferBar">FOR ONLINE PAYMENT EXTRA ₹50 DISCOUNT ON ORDERS ABOVE ₹500</p></div> 
     <div id="container">
-       
+
+  <!-- mayur page started -->
+
+        <div id="navBar1">
+            <div id="searchBox">
+                <input id="searchBar" type="text" placeholder="Search here..."/>
+                <img id="searchButton" src="search.svg" alt="search">
+            </div>
+            <div id="uboricLogoBox">
+                <img id="uboricLogo" src="uboric.svg" alt="uboric logo">
+            </div>
+            <div id="accountCartBox">
+                
+                <div class="signindropdown">
+                    <i id="accountLogo" class="fas fa-user-circle"></i>
+                    <div class="signindropdown-content">
+                        <h1>Sign in</h1>
+                        <p>CREATE AN ACCOUNT</p>
+                        <hr/>
+                      <form>
+                          <label id="signinBoxtxt">Username or email<span id="redStar"> *</span></label><br/>
+                          <input id="signinEmail" type="text"/><br/>
+                          <label id="signinBoxtxt">Password<span id="redStar"> *</span></label><br/>
+                          <input id="signinPassword" type="password"/><br/>
+                          <a id="passwordLost" href="">LOST YOUR PASSWORD?</a><br/>
+                          <input id="signinButton" type="submit" value="LOGIN"/><br/>
+                      </form>
+                    </div>
+                 </div>
+            
+            <i class="fas fa-cart-plus"></i>
+             <p id="cartsum">( 0 ) </p>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--        
         <div id="navBar1">
             <div id="searchBox">
                 <input id="searchBar" type="text" placeholder="Search here..."/>
@@ -440,21 +516,302 @@ margin-top: 45px;
             <div id="accountCartBox">
                 <i id="accountLogo" class="fas fa-user-circle"></i>
                 <i class="fas fa-cart-plus"></i>
-               <p id="cartsum">( 0 ) </p>
+               <p id="cartsum">( 0 ) </p> -->
 
 
 
 
 
                <!-- hie this is your web -->
+            <!-- </div> -->
+        <!-- </div> -->
+       
+        <div id="navBar">
+           
+                
+            
+            
+            
+            
+                 
+                <div class="dropdown">
+                    <button class="dropbtn">Categories 
+                      <i class="fa fa-caret-down arrowD"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="tab">
+                            <button class="tablinks" onmouseover="openCategory(event, 'Fashion')">Fashion</button>
+                            <button class="tablinks" onmouseover="openCategory(event, 'Kitchen')">Kitchen</button>
+                            <button class="tablinks" onmouseover="openCategory(event, 'Accessories')">Accessories</button>
+                            <button class="tablinks" onmouseover="openCategory(event, 'Health&PersonalCare')">Health & Personal Care</button>
+                            <button class="tablinks" onmouseover="openCategory(event, 'Electronics')">Electronics</button>
+                            <button class="tablinks" onmouseover="openCategory(event, 'ElectricAppliances')">Electric Appliances</button>
+                            <button class="tablinks" >Paintings</button>
+                            <button class="tablinks" >Anti puncture Liquid</button>
+                          
+                          </div>
+                          
+                          <div id="Fashion" class="tabcontent">
+                            <table>
+                              <thead align="left" class="tableheader">
+                                  <tr>
+                                      <th colspan="3" align="left" valign="middle" style="text-decoration: none;">
+                                      Foot Wear</th>
+                                      <th rowspan="1" align="left" valign="middle" style="text-decoration: none;">
+                                      Clothing</th>
+                                  </tr>
+                                  <tr>
+                                      <th>Mens footwear</th>
+                                      <th>Socs</th>
+                                      <th>Product Clouser</th>
+                                      <td>Mens Clothing</td>
+                                  </tr>
+                              </thead>
+                              <tr>
+                                  <td align="left">Casual Chapple/Slippers</td>
+                                  <td align="left"></td>
+                                  <td align="left">Lace Up</td>  
+                                  <td align="left">Womens colthing</td> 
+                              </tr>
+                              <tr>
+                                  <td align="left">Casual Sandals</td>
+                                  <td align="left"></td>
+                                  <td align="left">Slip On</td>
+                                  <td align="left">Western Wear</td>
+                              </tr>
+                              <tr>
+                                  <td align="left"> Casual/Party Shoes</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                                  <td align="left">Kurti</td>
+                              </tr>
+                              <tr>
+                                  <td align="left"> Chappal/Slippers</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                                  
+                              </tr>
+                              <tr>
+                                  <td align="left"> Crocs</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                              </tr>
+                              <tr>
+                                  <td align="left"> Flip Flops</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                              </tr>
+                              <tr>
+                                  <td align="left"> Loafers</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                              </tr>
+                              <tr>
+                                  <td align="left"> Mojdi</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                              </tr>
+                              <tr>
+                                  <td align="left">Sneakers</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                              </tr>
+                              <tr>
+                                  <td align="left">Sports Sandals</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                              </tr>
+                              <tr>
+                                  <td align="left">Soprts Shoes</td>
+                                  <td align="left"></td>
+                                  <td align="left"></td>
+                              </tr>
+                            </table>
+                          </div>
+                          
+                          <div id="Kitchen" class="tabcontent">
+                              <table>
+                                  <thead align="left" class="tableheader">
+                                      <tr>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Kitchen Ware</th>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Household Supplies</th>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Grocery</th>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Spices</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Air Tight Containers</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Gas Lighter</th>
+                                      </tr>
+                                      <tr>
+                                          <th>Kitchen Tools</th>
+                                      </tr>
+                                  </thead>
+                                  </table>
+                          </div>
+                          
+                          <div id="Accessories" class="tabcontent">
+                              <table>
+                                  <thead align="left" class="tableheader">
+                                      <tr>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Unisex Braclets</th>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Jewellery</th>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Bathroom Accessories</th>
+                                      </tr>
+                                  </thead>
+                                  </table>
+                          </div>
+                          
+                          <div id="Health&PersonalCare" class="tabcontent">
+                              <table>
+                                  <thead align="left" class="tableheader">
+                                      <tr>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Health Care</th>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Personal Care</th>
+                                      </tr>
+                                      <tr>
+                                          <td>Day Joy</td>
+                                          <td>Bombay Shaving Company</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Face Mask</td>
+                                          <td>Day Joy</td>
+                                      </tr>
+                                      <tr>
+                                          <td>GNFC</td>
+                                          <td>Dr Batras</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Oxi9</td>
+                                          <td>DYNA</td>
+                                      </tr>
+                                      <tr>
+                                          <td>Shreeji Sanjavni Gurukul</td>
+                                          <td>GNFC</td>
+                                      </tr>
+                                  </thead>
+                                  </table>
+                          </div>
+                          
+                          <div id="Electronics" class="tabcontent">
+                              <table>
+                                  <thead align="left" class="tableheader">
+                                      <tr>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Headphones</th>
+                                      </tr>
+                                      <tr>
+                                          <td>From 549</td>
+                                      </tr>
+                                      <tr>
+                                          <td>From 1132</td>
+                                      </tr>
+                                      <tr>
+                                          <td>From 1714</td>
+                                      </tr>
+                                      <tr>
+                                          <td>From 2297</td>
+                                      </tr>
+                                  </thead>
+                                  </table>
+                          </div>
+                          
+                          <div id="ElectricAppliances" class="tabcontent">
+                              <table>
+                                  <thead align="left" class="tableheader">
+                                      <tr>
+                                          <th  align="left" valign="middle" style="text-decoration: none;">
+                                          Philips</th>
+                                      </tr>
+                                  </thead>
+                                  </table>
+                          </div>
+                          
+                          <div class="clearfix"></div>
+                      </div>
+                    
+                  </div> 
+                
+                <div id="rahula"> 
+                  <a id="rahu" href="#news">Customer/Guest login</a>
+                  <a id="rahu" href="#news">Merchant/Bulk Order</a>
+                  <a id="rahu" href="#news">Become A Seller</a>
+                </div>
+                
+          </div>
+          
+      
+      <script>
+      function openCategory(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+  
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             </div>
         </div>
-        <div id="navBar">
-            <div id="check"></div>
-        </div>
+        <div id="rahulline">
         <div id="sectionNameBox">
             <h1 id="myAccount">WOODLAND MEN'S CASUAL/PARTY SHOES IN THA COLOUR</h1>
             <p id="home">Home <span id="Gap"> ></span><span id="myAccountGap"> Products</span><span id="Gap"> ></span><span id="myAccountGap"> Foot Wear</span><span id="Gap"> ></span><span id="myAccountGap">Men,s footwear</span><span id="Gap"> ></span><span id="myAccountGap">Casual/party shoes</span><span id="Gap"> ></span><span id="myAccountGap"> WOODLAND MAN'S CASUAL/PARTY SHOES IN TAN COLOUR</span></p>
+        </div>
         </div>
         <div></div>
         
@@ -506,6 +863,7 @@ margin-top: 45px;
 
 
           </div>
+         
           <div id="shoesdis">
               <p id="shoesh1">WOODLAND MAN'S CASUAL/PARTY SHOES IN TAN COLOUR</p>
               <div id="price"><span id="rupe">₹3,695.00</span><span id="pricetext">(Inclusive of all taxes)</span></div>
