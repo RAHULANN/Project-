@@ -414,6 +414,12 @@ margin-top: 45px;
 
 
 }
+#cartsum{
+    font-size: 17px;
+    margin-left: 3px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
 
 
 
@@ -434,7 +440,7 @@ margin-top: 45px;
             <div id="accountCartBox">
                 <i id="accountLogo" class="fas fa-user-circle"></i>
                 <i class="fas fa-cart-plus"></i>
-               <p id="cartsum"> </p>
+               <p id="cartsum">( 0 ) </p>
 
 
 
@@ -546,22 +552,39 @@ margin-top: 45px;
                   <div>
                       <input type="number" id="input1" value="1"  min="1" max="999" >
                   </div>
-                  <div ><button id="butt3" >ADD TO CART</button> </div>
+                  <div ><button id="butt3" onclick="addcart()" >ADD TO CART</button> </div>
 
 <script>
-     
-     var total="";
-    var sum=document.getElementById("input1").value;
-  
-    var pp=document.getElementById("cartsum");
-    var g=document.getElementById("butt3").addEventListener("click",addcart())
+     var total=[];
     
-    function addcart(event){
-      total=total+sum
-        pp.textContent=total;
-    }
+      function addcart(){
+    
+    var sum=document.getElementById("input1").value;
+   console.log(sum)
+    var pp=document.getElementById("cartsum");
+    pp.textContent= "( " + sum + " )";
+    var g=document.getElementById("butt3");
+    
    
-    console.log(sum)
+     
+       total.push(sum)
+       summm(total)
+      var pp=document.getElementById("cartsum");
+      console.log(sum);
+       
+    }
+    function summm(total){
+        var newsum=0
+        total=total.split("").map(Number)
+        for(var i=0;i<total.length;i++){
+            newsum=newsum+total[i]
+
+        }
+        console.log(newsum)
+    }
+
+   
+   
 </script>
 
 
